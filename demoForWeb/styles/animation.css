@@ -1,0 +1,93 @@
+/*
+* 主要是动画类css属性
+* @keyframes X 定义一个运动路线X 
+* animation: name(X)  duration ... ;
+  如何做动画效果？ 定义一个路线@keyframes X  使用animation属性 
+  3D转换，（x,y,z)三个方向 对称中心 x:沿x轴方向y:沿y轴方向z:沿旋转中心方向;
+  transition 过渡属性 动态变化效果
+
+*/
+
+/* @keyframes move0
+{
+	from {left:0px;}
+	to {left:650px;}
+} */
+
+@keyframes move1
+{
+	0% {top:0px;left:0px;}
+	10% {top:50px;left:50px;}
+	30% {top:100px;left:100px;}
+	50% {top:150px;left:150px;}
+	70% {top:200px;left:200px;}
+	100% {top:250px;left:250px;}
+}
+
+/* @-webkit-keyframes move0
+{
+	from {left:0px;}
+	to {left:650px;}
+} */
+
+.animation {
+/* 	margin: 10px;
+border: 1px  red dashed; */
+	width: 50px;
+	height:50px; 
+	position:relative; /*动画必须设置这个属性*/
+	/* animation:move0 2s infinite; */
+	/* -webkit-animation:move0 5s infinite; */
+	/* animation-delay: 10s; 延时10s动画进行*/
+	/* animation-direction:alternate; */
+	animation: move1 3s infinite ease;
+	-webkit-animation-direction:alternate;
+	background: url(../img/a350.jpg) no-repeat;
+}
+
+.desktop {
+	width: 200px;
+	height:800px;
+	border: 2px green double;
+}
+
+.left{
+	position: fixed;
+	top:300px;
+	left:200px;
+	width: 400px;
+	height:320px;
+	background: url(../img/t11.jpg) no-repeat;
+	transition: rotateZ(10deg);
+	-webkit-transform:rotateZ(10deg);
+	box-shadow: 10px 10px 5px #888888;
+	z-index: -1;
+}
+
+.right{
+	position: fixed;
+	top:300px;
+	left:700px;
+	width: 500px;
+	height:360px;
+	background: url(../img/t22.jpg) no-repeat;
+	transition: rotateZ(-10deg);
+	-webkit-transform:rotateZ(10deg);
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.pic_title{
+	position: relative;
+	top:80px;
+ 	text-align: center;
+	font: italic 40px bolder cursive;
+	transform: rotateZ(10deg);
+	-webkit-transform:rotateZ(10deg);
+	text-shadow: 5px 5px 2.5px #888888;
+}
+
+.right:hover{
+	transform: rotateZ(50deg); 
+	transition: transform 2s;
+	-webkit-transition transform 2s;
+}

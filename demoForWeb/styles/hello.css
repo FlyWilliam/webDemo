@@ -1,0 +1,96 @@
+/*css file*/
+/*地位均等多元素选择器:h2,p都是用一样的样式*/
+/* h2,p {
+	font-style:italic;
+	font-size:50px;
+	color: orange;
+} */
+/*级联元素选择器 div p 指示<div>标签内部的所有<p>标签*/
+/* div p{
+	font-size: 60px;
+	color: red;
+} */
+/*class选择器*/
+.hello-class {
+	font-size:45px;
+	color:blue;
+}
+/*id选择器*/
+#p-id {
+	font-size:35px;
+	color:red;
+}
+/* :link选择器
+a:link {
+	font-size: 29px;
+	color: yellow;
+}
+已选择过的连接
+a:visited {
+	font-size: 29px;
+	color: blue;
+}
+
+鼠标停留在元素上面
+a:hover {
+	font-size:15px;
+	color:green;
+}
+
+选择活动连接
+a:active {
+	font-size: 35px;
+	color:orange;
+} */
+
+/*div元素的所有子元素*/
+/* div > p {
+	font-style: italic;
+	font-size: 10px:
+	color:black; 
+} */
+
+div+p {
+	font-style: italic;
+	font-size: 18px:
+	color:yellow; 
+}
+
+/* p:first-letter {
+	font-size: 88px;
+	color: blue;
+} */
+
+/*作为第一个子元素的p元素*/
+p:first-child {
+	font-size: 60px;
+	color: blue;
+}
+/* 定义锚点，指向当前锚点触发的元素 */
+:target{
+	font-size: 15px;
+	-webkit-box-shadow: 0 0 5px rgba(0,113,241,1);
+}
+
+/* 元素获得焦点后设置样式 */
+input:focus{
+	margin: 0 10;
+	border: 1px;
+	color: red;
+}
+
+/* .wxin_qr{
+	display: block;
+	width: 150px;
+	height: 150px;
+	background: url("../img/wxin.png") no-repeat;
+	background-size: 150px 150px; 
+} */
+
+.wxin_qr:hover{
+	display: block;
+	width: 150px;
+	height: 150px;
+	background: url("../img/wxin.png") no-repeat;
+	background-size: 150px 150px; 
+}

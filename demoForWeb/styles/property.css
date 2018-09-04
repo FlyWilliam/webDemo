@@ -1,0 +1,87 @@
+/*
+* 边框设置border系列 基本属性 边框宽度 颜色 边框线类型 不必分开设置
+* 线类型：none(没有) dashed(虚线) dotted(点线) solid(实线) double(双实线) 等
+* border-radius： 圆角设置
+* url路径: 设置绝对路径或者相对路径
+* 盒子模型：margin控制块级元素之间的距离;padding控制块级元素的内部主要是border与内容之见的距离;
+* background-repeat:背景的平铺属性[repeat|repeat-x|repeat-y|no-repeat];
+* background-size:背景图片的大小[length|percentage|cover|contain;];
+* background-position:背景图片的定位 相对于元素;
+* background-attachment:背景的附着方式[fixed|local|scroll];
+* background-origin:背景图片开始的位置[border-box|padding-box|content-box];
+* 盒子阴影:box-shadow -> hoffset voffset blur spread color inset;
+* 轮廓:outline-x系列;
+* 文本样式: 1、首行缩进 text-indent应用到块级元素，主要影响块级元素及内联块级元素,可继承;
+*		   2、水平对齐 text-align[left|center|right|justify|inherit] 主要影响块级元素及内联块级元素;
+           3、字间距   word-spacing[length|normal|inherit],主要以空格分割的单词或汉字
+           4、字母间隔 letter-spacing 这个就是单独的字符间隔，汉字就是单个汉字，字母就是单个字母
+           5、文本转换 text-transform[uppercase(全大写) | lowercase(全小写) | capitalize(首字母大写) | none | inherit] 
+           6、文本修饰线 text-decoration [underline(下划线) || overline(上划线) || line-through(中划线)] | inherit]
+   字体属性(Font)
+           font-family font-size font-style font-weight
+*/         
+/* .panel{
+	width: 200px;
+	border: 2px dashed black;
+	background-color: yellow;
+ 	background-image: url(../img/header2.jpg);
+	border-radius:5px;
+	padding: 100px;
+	background-position:0% 50%;
+background-size: cover;
+background-origin:content-box;
+	background-repeat: no-repeat; 
+	box-shadow:10px 7px 3px 2px gray;
+outline-color:red;
+	outline-width: 2px;
+	outline-style: solid;
+    text-indent:10px;
+}
+
+.panel-inline{
+	border: 1px green dashed;
+	padding: 50px;
+	margin: 50px;
+	首次下沉
+	text-indent: 0.5em;
+} */
+
+/* p:first-letter{
+	float: left;
+	font-size: 30px;
+} */
+
+.window {
+	width: 300px;
+	height: 500px;
+	border: 1px red solid;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.left {
+	width: 100;
+	height: 100px;
+	border: 1px green dashed;
+	margin: 2px;
+	font: italic bold 40px "Times New Roman";
+}
+
+.center {
+	width: 120px;
+	height: 100px;
+	border: 1px grey dotted;
+}
+
+.bottom{
+	width: 200px;
+	height: 100px;
+	border: 1px orange double;
+} 
+
+div a {
+	 text-align: center;
+	/*  word-spacing:5px; */
+	/* letter-spacing:10px; */
+	/* text-transform: uppercase; */
+	text-decoration:line-through;
+}
